@@ -1,0 +1,44 @@
+﻿<Window x:Class="agenstvo_Ignatiev.registracia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:agenstvo_Ignatiev"
+        mc:Ignorable="d"
+        Title="registracia" Height="450" Width="800">
+    <Grid>
+        <Image Height="150" VerticalAlignment="Top" Source="nirHUijmWLI.jpg" RenderTransformOrigin="0.5,0.5" Margin="206,269,206,0"/>
+        <Button x:Name="registrB" Content="Регистрация" HorizontalAlignment="Left" Margin="340,208,0,0" VerticalAlignment="Top" Width="128" Click="registrB_Click" Height="42" Foreground="White" FontSize="18" BorderBrush="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF466720" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="Агенство недвижимости" Margin="10,10,363,0" VerticalAlignment="Top" FontSize="36" Background="{x:Null}" Foreground="#FF466720"/>
+        <Image Height="150" VerticalAlignment="Top" Source="nirHUijmWLI.jpg" RenderTransformOrigin="0.5,0.5" Margin="573,269,-161,0"/>
+        <Image Height="150" VerticalAlignment="Top" Source="nirHUijmWLI.jpg" RenderTransformOrigin="0.5,0.5" Margin="-161,269,573,0"/>
+        <TextBox x:Name="imyaT" HorizontalAlignment="Left" Height="23" Margin="187,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="familiyaT" HorizontalAlignment="Left" Height="23" Margin="187,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nomer_telefonaT" HorizontalAlignment="Left" Height="23" Margin="187,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="pochtaT" HorizontalAlignment="Left" Height="23" Margin="589,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="loginT" HorizontalAlignment="Left" Height="23" Margin="589,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="parolT" HorizontalAlignment="Left" Height="23" Margin="589,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="142,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="115,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер телефона" HorizontalAlignment="Left" Margin="72,174,0,0" VerticalAlignment="Top"/>
+        <Label Content="Почта" HorizontalAlignment="Left" Margin="530,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="529,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="522,174,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="vihodB" Content="Назад" HorizontalAlignment="Left" Margin="687,10,0,0" VerticalAlignment="Top" Width="95" Click="vihodB_Click" Height="38" Foreground="White" FontSize="16" BorderBrush="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF490505" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

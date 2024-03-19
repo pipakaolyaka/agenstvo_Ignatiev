@@ -1,0 +1,30 @@
+﻿<Window x:Class="agenstvo_Ignatiev.glavnaya"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:agenstvo_Ignatiev"
+        mc:Ignorable="d"
+        Title="Главная" Height="450" Width="1071.5">
+    <Grid>
+        <DataGrid x:Name="dataGridView1" HorizontalAlignment="Left" Height="364" Margin="23,32,0,0" VerticalAlignment="Top" Width="770" IsReadOnly="True"/>
+        <Image HorizontalAlignment="Left" Height="208" Margin="842,260,0,0" VerticalAlignment="Top" Width="206" Source="3380862.60780cbb53e50.jpeg"/>
+        <Label Content="Агенство &#xD;&#xA;недвижимости" Margin="863,35,-250,0" VerticalAlignment="Top" FontSize="24" Background="{x:Null}" Foreground="#FF466720" Height="80"/>
+        <Label Content="Тип:" HorizontalAlignment="Left" Margin="822,131,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="tipC" HorizontalAlignment="Left" Margin="934,133,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Количество &#xD;&#xA;комнат:" HorizontalAlignment="Left" Margin="822,163,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="komnatC" HorizontalAlignment="Left" Margin="934,172,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="vihodB" Content="Выход" HorizontalAlignment="Left" Margin="959,10,0,0" VerticalAlignment="Top" Width="95" Click="vihodB_Click" Height="38" Foreground="White" FontSize="16" BorderBrush="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF490505" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="dostupC" HorizontalAlignment="Left" Margin="934,217,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Доступность:" HorizontalAlignment="Left" Margin="822,217,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="poiskB" Content="Найти" HorizontalAlignment="Left" Margin="908,260,0,0" VerticalAlignment="Top" Height="25" Width="75" MouseLeftButtonDown="poiskB_MouseLeftButtonDown" Click="poiskB_Click"/>
+
+    </Grid>
+</Window>
